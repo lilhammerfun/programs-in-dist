@@ -1,0 +1,74 @@
+/* 品牌色 */
+:root {
+  --vp-c-brand-1: #2563eb;
+  --vp-c-brand-2: #3b82f6;
+  --vp-c-brand-3: #1d4ed8;
+}
+.dark {
+  --vp-c-brand-1: #60a5fa;
+  --vp-c-brand-2: #3b82f6;
+  --vp-c-brand-3: #2563eb;
+}
+
+/* MathJax：隐藏 assistive MathML */
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* MathJax：display 公式居中 */
+mjx-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+mjx-container[display="true"] {
+  display: flex !important;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+/* 自定义容器：展开 */
+.expand {
+  border-left: 4px solid var(--vp-c-indigo-soft);
+  background-color: var(--vp-c-indigo-soft);
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+.expand .custom-block-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* 自定义容器：思考 */
+.thinking {
+  border-left: 4px solid var(--vp-c-yellow-soft);
+  background-color: var(--vp-c-yellow-soft);
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+.thinking .custom-block-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* 自定义容器：练习 */
+.practice {
+  border-left: 4px solid var(--vp-c-green-soft);
+  background-color: var(--vp-c-green-soft);
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+.practice .custom-block-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}

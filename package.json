@@ -1,0 +1,18 @@
+{
+  "name": "programs-in-dist",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev course",
+    "build": "vitepress build course",
+    "preview": "vitepress preview course"
+  },
+  "dependencies": {
+    "markdown-it-container": "^4.0.0",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-mathjax3": "^5.2.0",
+    "mermaid": "^11.13.0",
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-mermaid": "^2.0.17"
+  }
+}
