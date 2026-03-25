@@ -41,6 +41,7 @@ export default withMermaid(
     lang: 'zh-CN',
     title: '分布式世界里的程序',
     description: '从程序员日常出发的分布式系统入门教材',
+    base: '/programs-in-dist/',
 
     markdown: {
       config: (md) => {
