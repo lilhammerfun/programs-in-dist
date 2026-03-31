@@ -82,7 +82,52 @@ export default withMermaid(
         { text: '首页', link: '/' },
       ],
 
-      sidebar: [],
+      sidebar: [
+        {
+          text: '前言',
+          link: '/prologue',
+        },
+        {
+          text: '第一章：基础约束与容错',
+          items: [
+            { text: '01 从单机到分布式', link: '/constraints/01-from-one-to-many' },
+            { text: '02 故障、超时与不确定性', link: '/constraints/02-fault-and-timeout' },
+            { text: '03 消息、重试与幂等', link: '/constraints/03-message-and-retry' },
+          ],
+        },
+        {
+          text: '第二章：复制',
+          items: [
+            { text: '04 单主复制', link: '/replication/01-single-leader' },
+            { text: '05 读一致性与故障转移', link: '/replication/02-read-consistency' },
+            { text: '06 时间、因果与冲突', link: '/replication/03-time-and-conflict' },
+            { text: '07 无主复制与仲裁', link: '/replication/04-leaderless' },
+          ],
+        },
+        {
+          text: '第三章：一致性与共识',
+          items: [
+            { text: '08 一致性模型', link: '/consistency/01-consistency-models' },
+            { text: '09 共识与不可能性', link: '/consistency/02-consensus-impossibility' },
+            { text: '10 Raft', link: '/consistency/03-raft' },
+          ],
+        },
+        {
+          text: '第四章：分区与事务',
+          items: [
+            { text: '11 分区', link: '/partitioning/01-partitioning' },
+            { text: '12 分布式事务', link: '/partitioning/02-distributed-tx' },
+          ],
+        },
+        {
+          text: '项目：zraft',
+          items: [
+            { text: 'P1 领导者选举', link: '/zraft/01-election' },
+            { text: 'P2 日志复制与安全性', link: '/zraft/02-log-replication' },
+            { text: 'P3 分区 KV', link: '/zraft/03-partitioned-kv' },
+          ],
+        },
+      ],
 
       outline: {
         level: [2, 3],

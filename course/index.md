@@ -7,7 +7,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /prologue
+      link: /constraints/01-from-one-to-many
 
 features:
   - title: 从你遇到的 Bug 开始
